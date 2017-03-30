@@ -24,3 +24,18 @@ if Integer === 21
 end
 
 # Case expressions
+# Single match case gets executed - no others
+name = 'Fisher'
+case name
+	when /fish/i then puts 'something fishy'
+	when 'Smith' then puts "your name is smith"
+end
+
+for i in 0..2
+	puts i
+end
+
+location = 'Via Giuseppe, Rome,Italy'
+case location
+	when /rome/ then puts 'when in rome'
+end
